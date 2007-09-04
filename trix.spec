@@ -1,6 +1,6 @@
 Summary:	TriX - VypressChat(TM) compatible chat
 Name:		trix
-Version:	0.91
+Version:	0.92
 Release:	%mkrel 1
 Epoch:		1
 License: 	GPL
@@ -68,5 +68,3 @@ cp %{buildroot}%{_datadir}/%{name}/gfx/default.png %{buildroot}%{_datadir}/pixma
 %{_datadir}/%{name}/tr/*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/*.png
-
-
