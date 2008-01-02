@@ -12,6 +12,7 @@ BuildRequires:	libqt-devel
 BuildRequires:	libxt-devel
 BuildRequires:	libxi-devel
 BuildRequires:	libxmu-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description 
 TriX is a serverless text chat, dedicated to using in small home or 
