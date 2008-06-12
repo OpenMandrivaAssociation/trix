@@ -40,15 +40,19 @@ mkdir -p %{buildroot}%{_datadir}/pixmaps
 install -D %{SOURCE1} %{buildroot}%{_datadir}/applications
 cp %{buildroot}%{_datadir}/%{name}/gfx/default.png %{buildroot}%{_datadir}/pixmaps/trix.png
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
 %{update_desktop_database}
 %update_icon_cache hicolor
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
 %{clean_desktop_database}
 %clean_icon_cache hicolor
+%endif
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
