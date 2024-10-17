@@ -5,7 +5,7 @@ Release:	%mkrel 5
 Epoch:		1
 License: 	GPLv2+
 Group:		Networking/Chat
-URL:		http://trix.sourceforge.net
+URL:		https://trix.sourceforge.net
 Source0:	http://downloads.sourceforge.net/trix/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 BuildRequires:	libqt-devel
