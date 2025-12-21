@@ -8,6 +8,11 @@ Group:		Networking/Chat
 URL:		https://trix.sourceforge.net
 Source0:	http://downloads.sourceforge.net/trix/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libqt-devel
 BuildRequires:	libxt-devel
 BuildRequires:	libxi-devel
